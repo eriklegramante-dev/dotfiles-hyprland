@@ -8,7 +8,6 @@
     "margin-left": 12,
     "margin-right": 12,
 
-    // Módulos divididos no topo
     "modules-left": [
         "hyprland/workspaces"
     ],
