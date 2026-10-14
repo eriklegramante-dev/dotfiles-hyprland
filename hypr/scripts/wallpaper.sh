@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+if ! pgrep -x "polkit-gnome-au" > /dev/null; then
+    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+fi
+
+if ! pgrep -x "nm-applet" > /dev/null; then
+    nm-applet --indicator &
+fi
+
 WALLPAPER="/home/arch/Images/Wallpaper/girl_rain.jpeg"
 
 sleep 1

@@ -115,7 +115,6 @@ button {
     animation-direction: alternate;
 }
 
-#network,
 #pulseaudio,
 #custom-wallpaper,
 #clock,
@@ -126,21 +125,6 @@ button {
     background-color: rgba(20, 22, 34, 0.45);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: #cdd6f4;
-}
-
-#network {
-    color: #94e2d5;
-    min-width: 28px;
-    padding: 0 6px;
-    margin: 4px 3px;
-    border-radius: 16px;
-    background-color: rgba(20, 22, 34, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-#network.disconnected {
-    color: #f38ba8;
-    background-color: rgba(243, 139, 168, 0.2);
 }
 
 #pulseaudio {
@@ -177,7 +161,6 @@ button {
 }
 
 #custom-wallpaper:hover,
-#network:hover,
 #pulseaudio:hover,
 #cpu:hover,
 #memory:hover,

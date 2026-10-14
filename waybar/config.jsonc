@@ -23,7 +23,6 @@
         "memory",
         "battery",
         "clock",
-        "network",
         "custom/power",
         "tray"
     ],

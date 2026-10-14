@@ -358,3 +358,9 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+exec_once = {
+    "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
+    "nm-applet --indicator",
+    "~/.config/hypr/scripts/wallpaper.sh",
+}
