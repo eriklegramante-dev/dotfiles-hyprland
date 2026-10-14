@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER="/home/arch/Images/Wallpaper/rain2.png"
+WALLPAPER="/home/arch/Images/Wallpaper/girl_rain.jpeg"
 
 sleep 1
 

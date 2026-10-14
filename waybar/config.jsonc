@@ -23,6 +23,7 @@
         "memory",
         "battery",
         "clock",
+        "network",
         "custom/power",
         "tray"
     ],
@@ -106,6 +107,16 @@
         "format": "󰥔 {:%H:%M}",
         "format-alt": "󰃭 {:%a, %d %b %Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰌘",
+        "format-disconnected": "󰤮",
+        "tooltip-format-wifi": "Wi-Fi: {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "Ethernet: {ipaddr}",
+        "tooltip-format-disconnected": "Desconectado",
+        "on-click": "nm-connection-editor"
     },
 
     "custom/power": {

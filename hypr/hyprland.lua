@@ -107,31 +107,29 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 10,
-        rounding_power = 2,
-
-        active_opacity   = 0.95,
-        inactive_opacity = 0.85,
-
-        shadow = {
-            enabled      = true,
-            range        = 8,
-            render_power = 3,
-            color        = 0xee0f141c, 
-        },
+        rounding = 16,
 
         blur = {
-            enabled   = true,
-            size      = 6,
-            passes    = 2,
-            vibrancy  = 0.20,
+            enabled = true,
+            size = 8,
+            passes = 3,
+            new_optimizations = true,
+            xray = false,
+            ignore_opacity = true,
         },
     },
 
     animations = {
         enabled = true,
     },
+
+    layerrule = {
+        "blur, waybar",
+        "ignorezero, waybar",
+    }
 })
+
+
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })
@@ -352,6 +350,7 @@ hl.window_rule({
 -- overlayLayerRule:set_enabled(false)
 
 -- Hyprland-run windowrule
+
 hl.window_rule({
     name  = "move-hyprland-run",
     match = { class = "hyprland-run" },

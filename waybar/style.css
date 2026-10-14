@@ -10,7 +10,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 button {
@@ -20,8 +20,8 @@ button {
 }
 
 #workspaces {
-    background-color: rgba(15, 20, 30, 0.65);
-    border: 1px solid rgba(137, 180, 250, 0.2);
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 16px;
     margin: 4px 2px;
     padding: 2px 4px;
@@ -55,18 +55,18 @@ button {
 }
 
 #window {
-    background-color: rgba(15, 20, 30, 0.60);
+    background-color: rgba(20, 22, 34, 0.45);
     padding: 2px 14px;
     border-radius: 16px;
-    border: 1px solid rgba(137, 180, 250, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     margin: 4px;
     color: #bac2de;
     font-style: italic;
 }
 
 #cpu {
-    background-color: rgba(15, 20, 30, 0.65);
-    border: 1px solid rgba(137, 180, 250, 0.2);
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-right: none;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -76,9 +76,9 @@ button {
 }
 
 #memory {
-    background-color: rgba(15, 20, 30, 0.65);
-    border-top: 1px solid rgba(137, 180, 250, 0.2);
-    border-bottom: 1px solid rgba(137, 180, 250, 0.2);
+    background-color: rgba(20, 22, 34, 0.45);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
     border-left: none;
     border-right: none;
     border-radius: 0;
@@ -88,8 +88,8 @@ button {
 }
 
 #battery {
-    background-color: rgba(15, 20, 30, 0.65);
-    border: 1px solid rgba(137, 180, 250, 0.2);
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-left: none;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
@@ -115,6 +115,7 @@ button {
     animation-direction: alternate;
 }
 
+#network,
 #pulseaudio,
 #custom-wallpaper,
 #clock,
@@ -122,9 +123,24 @@ button {
     padding: 0 12px;
     margin: 4px 3px;
     border-radius: 16px;
-    background-color: rgba(15, 20, 30, 0.65);
-    border: 1px solid rgba(137, 180, 250, 0.2);
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     color: #cdd6f4;
+}
+
+#network {
+    color: #94e2d5;
+    min-width: 28px;
+    padding: 0 6px;
+    margin: 4px 3px;
+    border-radius: 16px;
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#network.disconnected {
+    color: #f38ba8;
+    background-color: rgba(243, 139, 168, 0.2);
 }
 
 #pulseaudio {
@@ -139,9 +155,9 @@ button {
     padding: 0 12px;
     margin: 4px 3px;
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(30, 20, 30, 0.8), rgba(180, 60, 90, 0.7));
-    border: 1px solid rgba(243, 139, 168, 0.4);
-    color: #f5c2e7;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
 }
 
 @keyframes blink {
@@ -161,6 +177,7 @@ button {
 }
 
 #custom-wallpaper:hover,
+#network:hover,
 #pulseaudio:hover,
 #cpu:hover,
 #memory:hover,
