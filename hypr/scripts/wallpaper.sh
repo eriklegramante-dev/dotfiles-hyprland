@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-if ! pgrep -x "polkit-gnome-au" > /dev/null; then
+if ! pgrep -f "polkit-gnome-authentication-agent-1" > /dev/null; then
     /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 fi
+
+eval $(gnome-keyring-daemon --start --components=secrets) &
 
 if ! pgrep -x "nm-applet" > /dev/null; then
     nm-applet --indicator &
