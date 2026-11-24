@@ -54,6 +54,19 @@ button {
     color: #f38ba8;
 }
 
+#custom-wallpaper {
+    background-color: rgba(20, 22, 34, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 0 12px;
+    margin: 4px 3px;
+    color: #00e5ff;;
+}
+
+#custom-wallpaper:hover {
+    background-color: rgba(30, 40, 60, 0.85);
+}
+
 #window {
     background-color: rgba(20, 22, 34, 0.45);
     padding: 2px 14px;
@@ -116,7 +129,6 @@ button {
 }
 
 #pulseaudio,
-#custom-wallpaper,
 #clock,
 #tray {
     padding: 0 12px;

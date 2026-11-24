@@ -51,11 +51,12 @@
         "max-length": 45,
         "separate-outputs": true
     },
-    
+
     "custom/wallpaper": {
-        "format": "󰸉",
-        "tooltip-format": "Change Wallpaper",
-        "on-click": "/home/sob/.config/hypr/scripts/wallpaper.sh"
+    "format": "",
+    "on-click": "~/.config/hypr/scripts/change_wallpaper.sh",
+    "tooltip": true,
+    "tooltip-format": "Click to switch to random wallpaper."
     },
 
     "pulseaudio": {
@@ -102,7 +103,7 @@
     },
 
     "clock": {
-        "timezone": "America/Sao_Paulo",
+        "timezone": "Australia/Sydney",
         "format": "󰥔 {:%H:%M}",
         "format-alt": "󰃭 {:%a, %d %b %Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
